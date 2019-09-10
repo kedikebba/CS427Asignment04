@@ -1,75 +1,82 @@
-
 body{
-    background-color:whitesmoke;
-
+    width: 100%;
+    margin: auto;
+    /* background-color: grey; */
 }
-
-
-.leftForm input{
-    width: 50%;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-.rightForm input{
-    width: 50%;
-    padding: 10px;
-    margin: 10px;
-
-}
-.rightForm {
-    display:inline-block;
-	width:45%;
-    padding: 10px;
-    margin: 10px;
-	vertical-align: top;
-}
-.leftForm {
-    display:inline-block;
-	width:45%;
-    padding: 10px;
-    margin: 10px;
-	vertical-align: top;
-}
-.top{
-    height: 60px;
+.header{
     background-color: aquamarine;
-    margin: -7px;
-    padding: 10px;
 }
-.top h2{
-    display:inline-block;
-    margin-right: 20px;
-}
-.top select{
-    display:inline-block;
-   border: none;
-   background-color: transparent;
-   
-}
-.bottom{
-    background-color:#E3E3E3;
-    height: 45px;
-    padding-left: 550px;
-    padding-right: 450px;
-    padding-top: 10px;
-    padding-right: 50px;
+
+nav{
+    /* background-color: gainsboro; */
+    /* padding: 10px; */
+    /* display: flex; */
+    padding: 15px;
+    /* border: 1px solid black; */
+    height: 40px;
+    
     
 }
-.bottom input{
-    background-color: aquamarine;
-    height: 20px;
-    width: 100px;
-    margin-bottom: 40px;
-    margin-right: 10px;
+nav h3{
+    display: inline-block;
+
+}
+.heading_line{
+    padding: 10px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 20px;
+    padding: 10px;
+    /* margin: auto;
+    width: 80%; */
+}
+
+.side1{
+    /* background-color: aqua; */
+    padding: 10px;
+    color: black;
+   
+}
+.side2{
+    padding: 10px;
     
 }
-.paymentMode input{
+
+.form_elem{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+ 
+}
+.footer{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    color: whitesmoke;
+    background-color: aquamarine;
+
+    /* justify-items: center; */
+    height: 35px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5px;
+    
+    
+}
+div.buttons{
+    width: 300px;
+    margin: auto;
    
-    margin-left: 70px;
-    margin-right: -250px;
 }
 
-
-
+@media only screen and (max-width: 810px) {
+    .main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+        padding: 10px;
+    }
+}
